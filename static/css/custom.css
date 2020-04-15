@@ -18,3 +18,24 @@ footer {
 .accountform {
     padding-top: 20px;
 }
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.product-description {
+    min-height: 40px;
+}
