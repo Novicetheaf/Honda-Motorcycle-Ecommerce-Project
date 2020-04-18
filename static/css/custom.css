@@ -1,19 +1,29 @@
 body {
     font-family: Arial;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-footer {
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
+a {
+    color: white;
 }
 
-.icon-bar {
-    background-color: #fff;
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    
 }
+
+/*----------------------------------------Navigation Bar*/
+.navbar-fixed-top {
+    background-color: rgb(27, 20, 20);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+
+
 
 .accountform {
     padding-top: 20px;
@@ -25,6 +35,13 @@ footer {
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
+    color:#070707;
+    background-color: #8cbbd7;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
 }
 
 .product {
@@ -36,6 +53,45 @@ footer {
     margin: 0 auto;
 }
 
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
 .product-description {
     min-height: 40px;
+}
+
+/*--------------------------------------------Footer Section*/
+
+.footer-icons {
+    font-size: 2.7em;
+    color: rgb(255, 0, 0);
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 125px;
+    color: rgb(255, 0, 0);
+}
+
+footer {
+    background-color: rgb(27, 20, 20);
+    height: 225px;
+    margin-top: 200px;
 }
