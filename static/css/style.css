@@ -6,14 +6,8 @@ a {
     color: white;
 }
 
-a:hover {
-    color: white;
-    background-color: rgb(204, 0, 0);
-}
-
 .nav li a:hover {
     color: white;
-    background-color: rgb(204, 0, 0);
 }
 
 .container {
