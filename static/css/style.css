@@ -63,6 +63,11 @@ article {
     background-color: rgb(204, 0, 0);
 }
 
+.navbar-a-link:hover { 
+    text-decoration: none;
+    color: rgb(204, 0, 0);
+} 
+
 /*------------------------------------------Products*/
 
 .product {
