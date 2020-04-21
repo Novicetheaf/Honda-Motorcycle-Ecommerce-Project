@@ -11,14 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <!--this initalizes the key it must remain in the head.-->
     <script>(function(){emailjs.init("user_aYnydgV8GLODdXJmI0ZfP");})();</script>
-    
     <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <!--Custom Css-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register-or-login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
     <!--Font Aw-->
     <script src="https://kit.fontawesome.com/4a795257bd.js" crossorigin="anonymous"></script>
-    
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -99,7 +99,6 @@
         </div>
     {% endif %}
 
-    <!--Products here-->
     <article>
         <div class="container">
             {% block content %} {% endblock %}
