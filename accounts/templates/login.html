@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-<article>
+<article class="py-3 mx-auto" id="login-article">
     <div class="container">
 
-        <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
+        <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform mx-auto">
             <fieldset class="form-group">
                 <legend>Login</legend>
                 {% csrf_token %}
@@ -12,7 +12,7 @@
                 
                 <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
                 
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-light ml-1">Login</button>
             </fieldset>
         </form>
 
