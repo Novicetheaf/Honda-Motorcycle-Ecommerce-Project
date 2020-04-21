@@ -1,6 +1,13 @@
 body {
-    font-family: Arial;
-}
+
+    background: url("../images/honda-background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+        
+}      
 
 a {
     color: white;
@@ -13,7 +20,6 @@ a {
 .container {
     padding-left: 0;
     padding-right: 0;
-    
 }
 
 li {
@@ -27,6 +33,17 @@ article {
 .btn-light {
      background-color: rgb(189, 84, 52);
      color: white;
+}
+
+/*----------------------------------------Index*/
+
+.custom-jumbotron {
+    margin-top: 70px;
+    background-color: #fdfdfdc9;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
 }
 
 /*----------------------------------------User Message*/
@@ -47,10 +64,6 @@ article {
 
 .navbar-brand {
     color: white;
-}
-
-.accountform {
-    padding-top: 20px;
 }
 
 .badge {
@@ -112,6 +125,7 @@ caption p {
 .panel-body {
     height: 100%;
     border: 1px solid #ddd;
+    background-color: white;
 }
 
 .product-description {
@@ -157,29 +171,39 @@ footer {
 @media only screen and (min-width: 550px) {
 
     .product {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    padding-top: 35px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        padding-top: 35px;
 
-  }
+    }
 
 }
 
 @media only screen and (min-width: 1200px) {
 
- .product {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 350px;
-    height: 350px;
-    margin: 0 auto;
-    padding-top: 25px;
+    .product {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        padding-top: 25px;
 
-  }
+    }
+
+}
+
+@media only screen and (min-width: 550px) {
+
+    .custom-jumbotron {
+
+        width: 75%;
+
+    }
 
 }
