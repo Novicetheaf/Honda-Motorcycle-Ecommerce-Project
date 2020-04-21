@@ -151,3 +151,35 @@ footer {
     height: 225px;
     margin-top: 200px;
 }
+
+/*---------------------------------------------Media Query*/
+
+@media only screen and (min-width: 550px) {
+
+    .product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 35px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+ .product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 25px;
+
+  }
+
+}

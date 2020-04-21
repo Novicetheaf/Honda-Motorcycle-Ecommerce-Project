@@ -50,6 +50,11 @@
             <div id="navbarResponsive" class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto py-auto">
                     <li class="navbar-icons">
+                        <a class="navbar-a-link" href="{% url 'products' %}">
+                            <i class="fas fa-motorcycle"></i> Products
+                        </a>
+                    </li>
+                    <li class="navbar-icons">
                         <a class="navbar-a-link" href="{% url 'view_cart' %}">
                             <i class="fas fa-shopping-cart"></i> Cart
                             {% if product_count > 0 %}
