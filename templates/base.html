@@ -62,8 +62,8 @@
                         <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
                         <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                     {%  else %}
-                        <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
                         <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                        <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
                     {% endif %}
                     
                     <li id="search-form">
@@ -85,11 +85,10 @@
 
     <!--alert messages here for customer-->
     {% if messages %}
-    <h1>You have message</h1>
         <div class="alert alert-success">
             <div class="messages">
                 {% for message in messages %}
-                    <h1>{{ message }}</h1>
+                    <h5>{{ message }}</h5>
                 {% endfor %}
             </div>
         </div>

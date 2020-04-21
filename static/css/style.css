@@ -24,10 +24,15 @@ article {
     padding-top: 190px;
 }
 
+.btn-light {
+     background-color: rgb(189, 84, 52);
+     color: white;
+}
+
 /*----------------------------------------User Message*/
 
-.messages {
-    padding: 200px;
+.alert-success {
+    margin-top: 90px;
 }
 
 /*----------------------------------------Navigation Bar*/
@@ -65,8 +70,13 @@ article {
 
 .navbar-a-link:hover { 
     text-decoration: none;
-    color: rgb(204, 0, 0);
+    color: rgb(189, 84, 52);
 } 
+
+.navbar-dark .navbar-toggler {
+    color: rgb(220, 0, 0);
+    border-color: rgba(220, 0, 0, 0.4);
+}
 
 /*------------------------------------------Products*/
 
@@ -121,11 +131,6 @@ caption p {
 .input-group-btn {
     padding-left: 5px;
     padding-right: 15px;
-}
-
-.btn-light {
-     background-color: rgb(189, 84, 52);
-     color: white;
 }
 
 /*--------------------------------------------Footer Section*/
