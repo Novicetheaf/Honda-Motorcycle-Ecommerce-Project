@@ -49,14 +49,7 @@
 
             <div id="navbarResponsive" class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto py-auto">
-                    {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
-                        <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
-                    {%  else %}
-                        <li><a href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
-                        <li><a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
-                    {% endif %}
-                    <li>
+                    <li class="navbar-icons">
                         <a href="{% url 'view_cart' %}">
                             <i class="fas fa-shopping-cart"></i> Cart
                             {% if product_count > 0 %}
@@ -64,7 +57,16 @@
                             {% endif %}
                         </a>
                     </li>
-                    <li>
+
+                    {% if user.is_authenticated %}
+                        <li class="navbar-icons"><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
+                        <li class="navbar-icons"><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                    {%  else %}
+                        <li class="navbar-icons"><a href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
+                        <li class="navbar-icons"><a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                    {% endif %}
+                    
+                    <li id="search-form">
                         <form class="form-inline" action="{% url 'search' %}" method="GET">
                             <div class="form-row">
                                 <div class="col">
