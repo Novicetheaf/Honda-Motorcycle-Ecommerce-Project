@@ -3,3 +3,67 @@
     margin-top: 190px;
     padding: 0;
 }
+
+.total-checkout-text {
+    text-align: right;
+}
+
+.total-value-text {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 12px;
+}
+
+.checkout-btn {
+    margin-right: 15px;
+}
+
+.caption {
+    margin: 15px;
+}
+
+.product-description-cart {
+    padding-left: 0;
+    height: 70px;
+}
+
+.input-group {
+    padding-left: 0;
+    margin-top: 35px;
+}
+
+.input-group-addon {
+    padding: 5px 7px 5px 7px;
+}
+
+.input-group-addon-qty {
+    padding: 5px 7px 5px 0;
+}
+
+.btn-success:hover {
+    background-color: rgb(252, 225, 225);
+    color: rgb(19, 16, 16);
+}
+
+.btn-success {
+    background-color: rgb(50, 88, 84);
+    margin-top: 5px;
+}
+
+.checkout-with-total {
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 760px) {
+
+    .col-xs-10.col-xs-offset-1.col-sm-offset-0.col-sm-6.col-md-4.display.panel.panel-display {
+        margin: 15px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .col-xs-10.col-xs-offset-1.col-sm-offset-0.col-sm-6.col-md-4.display.panel.panel-display {
+        margin: 0px;
+    }
+}
