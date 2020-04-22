@@ -10,9 +10,13 @@
                 {% csrf_token %}
                 {{ user_form | as_bootstrap }}
                 
-                <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+                <p><a class="forgot-passwrd" href="{% url 'password_reset' %}">Forgot my password</a></p>
                 
                 <button type="submit" class="btn btn-light ml-1">Login</button>
+
+                <span class="no-acnt-login-text">Don't have an account with us? 
+                    <a class="no-acnt-login-form" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a>
+                </span>
             </fieldset>
         </form>
 
