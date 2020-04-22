@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-<article>
+
+
+<article class="cart-article py-5 mx-auto">
     <div class="container">
-        <h2>Success!</h2>
-        <p>You are logged in as {{ user.email }} </p>
+
+        <div class="jumbotron profile">
+            <h1 class="display-4">Honda Motorcycle Shop</h1>
+            <hr class="my-4">
+            <h1>Welcome {{ user.username }}!</h1>
+            <p>You are logged in as {{ user.email }} </p>
+        </div>
     </div>
 </article>
+
 {% endblock %}
