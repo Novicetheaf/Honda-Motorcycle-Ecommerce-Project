@@ -39,18 +39,28 @@
             </div>
             {% endfor %}
         </div>
-
-        <div class="container">
-            <div class="row checkout-with-total">
-                    <div class="col-7 col-md-10 total-value-text pl-1">
-                        <span class="total-checkout-text">Total € {{ total }}</span>
-                    </div>
-                    <div class="col-1 offset-sm-11 offset-md-9 checkout-btn">
-                        <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="far fa-check-circle"></i>  Checkout</a>
+       
+            {% if cart_items %}
+            <div class="container">
+                <div class="row checkout-with-total">
+                        <div class="col-7 col-md-10 total-value-text pl-1">
+                            <span class="total-checkout-text">Total € {{ total }}</span>
+                        </div>
+                        <div class="col-1 offset-sm-11 offset-md-9 checkout-btn">
+                            <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="far fa-check-circle"></i>  Checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            {% else %}
+            <div class="jumbotron cart-empty">
+                <h1 class="display-4">Honda Motorcycle Shop</h1>
+                <hr class="my-4">
+                <p>Sorry! you have no items in your cart.
+                    <span><a class="navbar-a-link" href="{% url 'products' %}">Click here </a></span> to view products.
+                </p>
+            </div>
+            {% endif %}
 
     </div>
 </article>
