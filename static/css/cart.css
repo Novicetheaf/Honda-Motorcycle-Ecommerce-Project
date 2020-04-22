@@ -54,6 +54,15 @@
     margin-top: 15px;
 }
 
+.cart-empty {
+    background: #cac8c8c9;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
+}
+
 @media only screen and (min-width: 760px) {
 
     .col-xs-10.col-xs-offset-1.col-sm-offset-0.col-sm-6.col-md-4.display.panel.panel-display {
