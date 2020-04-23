@@ -21,6 +21,14 @@
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
 }
 
+#password-reset-article {
+    background-color: white;
+    padding-top: 0;
+    margin-top: 230px;
+    max-width: 800px;
+    padding: 25px;
+}
+
 .forgot-passwrd {
     color: rgb(66, 57, 57);
 }
@@ -31,4 +39,20 @@
 
 .no-acnt-login-text {
     padding-left: 15px;
+}
+
+.ceneter-p {
+    text-align: center;
+}
+
+.login-legend, .forgot-passwrd {
+    padding-left: 5px;
+}
+
+.psswrd-reset-container {
+    width: 75%;
+}
+
+#id_username_or_email, #id_password, #id_username, #id_email, #id_password1, #id_password2 {
+    margin-left: 0;
 }
