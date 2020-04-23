@@ -1,9 +1,42 @@
-.checkout-product {
+.checkout-custom {
     margin: auto;
     background: white;
+}
+
+.form-control {
+    margin-left: 0;
+}
+
+.checkout-btn {
+    padding: 13px;
+}
+
+.checkout-total {
+    padding: 25px;
+}
+
+#checkout-product {
+    margin-top: 320px;
 }
 
 #payment-form {
     margin: auto;
     background: white;
+}
+
+#payment-header {
+    text-align: center;
+}
+
+.align-payment-form {
+    margin: auto;
+}
+
+@media only screen and (min-width: 760px) {
+
+    .checkout-section {
+        width: 85%;
+        margin: auto;
+    }
+
 }
