@@ -4,14 +4,35 @@
 
 <article class="cart-article pt-1 pb-5 mx-auto">
     <div class="container">
-
+        <div class="row">
         <div class="profile py-5">
             <h1 class="display-4">Honda Motorcycle Shop</h1>
             <hr class="my-4">
             <h1>Welcome {{ user.username }}!</h1>
             <p>You are logged in as {{ user.email }} </p>
         </div>
+        </div>
+        <div class="row">
+        
+{% for order in user.orders.all %}
+    <div class="row">
+    <h2>Order: {{ order }}</h2>
+    <div class="row">
+    <ul>
+    {% for prod in order.line.all %}
+    <li>{{ prod.product }} - {{ prod.quantity }}</li>
+    {% endfor %}
+    </ul>
+    </div>
+    </div>
+{% endfor %}
+
+        </div>
+
     </div>
 </article>
+
+
+
 
 {% endblock %}
