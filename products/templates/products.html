@@ -32,6 +32,18 @@
             </div>
         </div>
         {% endfor %}
+
+        {% if products.count > 0 %}
+        {% else %}
+        <div class="cart-empty py-5">
+            <h1 class="display-4">Honda Motorcycle Shop</h1>
+            <hr class="my-4">
+            <p>Sorry! We don't have a motorcycle like that one!
+                <span><a class="navbar-a-link" href="{% url 'products' %}">Click here </a></span> to view products.
+            </p>
+        </div>
+        {% endif %}
+
         </div>
     </div>
 </article>
