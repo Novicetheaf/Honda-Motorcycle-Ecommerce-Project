@@ -15,11 +15,11 @@ stripe.api_key = settings.STRIPE_SECRET
 @login_required()
 def checkout(request):
     if request.method == "POST":
-        order_form = UserAddressOrderForm(request.POST)
-        payment_form = UserPaymentDetailsForm(request.POST)
+        users_address_entry = UserAddressOrderForm(request.POST)
+        users_payment_entry = UserPaymentDetailsForm(request.POST)
 
-        if order_form.is_valid() and payment_form.is_valid():
-            order = order_form.save(commit=False)
+        if users_address_entry.is_valid() and users_payment_entry.is_valid():
+            order = users_address_entry.save(commit=False)
             order.date = timezone.now()
             order.save()
 
@@ -40,23 +40,23 @@ def checkout(request):
                     amount = int(total * 100),
                     currency = "EUR",
                     description = request.user.email,
-                    card = payment_form.cleaned_data['stripe_id']
+                    card = users_payment_entry.cleaned_data['stripe_id']
                 )
             except stripe.error.CardError:
-                messages.error(request, "Card declined!")
+                messages.error(request, "Sorry! your card was declined!")
 
 
             if customer.paid:
-                messages.error(request, "You have successfully paid")
+                messages.error(request, "Payment successful!")
                 request.session['cart'] = {}
                 return redirect(reverse('products'))
             else:
                 messages.error(request, "Payment unsuccessful")
         else:
-            print(payment_form.errors)
-            messages.error(request, "Unable to process payment, please your contact card issuer")
+            print(users_payment_entry.errors)
+            messages.error(request, "Sorry! we were unable to process your card")
     else:
-        payment_form = UserPaymentDetailsForm()
-        order_form = UserAddressOrderForm()
+        users_payment_entry = UserPaymentDetailsForm()
+        users_address_entry = UserAddressOrderForm()
     
-    return render(request, "checkout.html", {"order_form": order_form, "payment_form": payment_form, "publishable": settings.STRIPE_PUBLISHABLE})
+    return render(request, "checkout.html", {"users_address_entry": users_address_entry, "users_payment_entry": users_payment_entry, "publishable": settings.STRIPE_PUBLISHABLE})
