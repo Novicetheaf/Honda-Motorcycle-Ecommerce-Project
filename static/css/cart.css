@@ -63,6 +63,10 @@
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
 }
 
+.total-cost-checkout-text {
+    padding-right: 5px;
+}
+
 @media only screen and (min-width: 760px) {
 
     .col-xs-10.col-xs-offset-1.col-sm-offset-0.col-sm-6.col-md-4.display.panel.panel-display {
