@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .forms import MakePaymentForm, OrderForm
+from .forms import UserPaymentDetailsForm, UserAddressOrderForm
 from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
@@ -15,8 +15,8 @@ stripe.api_key = settings.STRIPE_SECRET
 @login_required()
 def checkout(request):
     if request.method == "POST":
-        order_form = OrderForm(request.POST)
-        payment_form = MakePaymentForm(request.POST)
+        order_form = UserAddressOrderForm(request.POST)
+        payment_form = UserPaymentDetailsForm(request.POST)
 
         if order_form.is_valid() and payment_form.is_valid():
             order = order_form.save(commit=False)
@@ -56,7 +56,7 @@ def checkout(request):
             print(payment_form.errors)
             messages.error(request, "Unable to process payment, please your contact card issuer")
     else:
-        payment_form = MakePaymentForm()
-        order_form = OrderForm()
+        payment_form = UserPaymentDetailsForm()
+        order_form = UserAddressOrderForm()
     
     return render(request, "checkout.html", {"order_form": order_form, "payment_form": payment_form, "publishable": settings.STRIPE_PUBLISHABLE})
