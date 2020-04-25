@@ -24,7 +24,7 @@ class UserRegistrationForm(UserCreationForm):
         email = self.cleaned_data.get('email')
         username = self.cleaned_data.get('username')
         if User.objects.filter(email=email).exclude(username=username):
-            raise forms.ValidationError(u'Email addresses must be unique.')
+            raise forms.ValidationError(u'Sorry! looks like this email already has an account with us.')
         return email
 
     def clean_password2(self):
@@ -32,9 +32,9 @@ class UserRegistrationForm(UserCreationForm):
         password2 = self.cleaned_data.get('password2')
 
         if not password1 or not password2:
-            raise ValidationError("Password must not be empty")
+            raise ValidationError("You must enter a password")
 
         if password1 != password2:
-            raise ValidationError("Passwords do not match")
+            raise ValidationError("Sorry! your passwords do not match.")
 
         return password2
