@@ -21,9 +21,9 @@ A live demo can be viewed [here](https://data-centric-dev-bike-reviews.herokuapp
 ## User Experience
 
 ### User stories
-As an end-user I want to access the information on this web site with ease, I want to add a review with ease and quick succession. I want to edit my review or any review I feel needs to be updated.
+As an end-user I want to find all the motorcycles on this web site with ease, I want to add products to my shopping cart with ease and quick succession. I want to edit my shopping cart contents either by removing them or amending the quantity. I also want to be able to purchase products at the checkout page and add my adddress details so I can receive my motorcycle.
 
-Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code with python3 and mongodb.
+Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code with python3, sql and jquery. I also want to his skills with Frameworks such as Django.
 
 Any recruiters who visits my web site will want to see if my site meets the requirments of the position they are recruiting for.
 
