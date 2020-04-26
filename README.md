@@ -1,4 +1,4 @@
-# **Honda Motorcycles Ecommerce Shop Final Project**
+# **Honda Motorcycle Ecommerce Shop Final Project**
 **Edmund O Callaghan**
 
 This is my Honda Ecommerce Motorcycle shop, which gives the end-user an array of motorcycles that can be viewed for interested users. It also has the option for users to buy any of the listed products. The user can view their profile details and view their items in their cart.
