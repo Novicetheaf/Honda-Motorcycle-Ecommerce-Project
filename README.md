@@ -7,7 +7,7 @@ The user can Search for items which contain letters or word structures, they can
 
 The shop uses a Stripe api to manage payments, currently the Stripe account is set to development mode, so you can only use stripes test cards for transactions, which can be found [here](https://stripe.com/docs/testing)
 
-The idea for this site is to show CRUD functionality with python3 and sql, Stripe api functionality using jquery. To show user authentication and Djangos CMS system based off the custom models for products and orders.
+The idea for this site is to show CRUD functionality with python3 and sql, Stripe api functionality using jquery. To show user authentication and Djangos CMS system based off the custom models for products and orders, which is only available to administration users and allows the administration user to add products and view orders and delete user accounts etc.
 
 The web app also contains forms of contacting me in my footer, via conact me modal, github and linkedin.
  
