@@ -1,5 +1,5 @@
 from django.db import models
-from products.models import Product
+from motorcycles.models import Motorcycle
 from django.contrib.auth.models import User
 
 
@@ -21,7 +21,7 @@ class Order(models.Model):
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, related_name="line")
-    product = models.ForeignKey(Product, null=False)
+    product = models.ForeignKey(Motorcycle, null=False)
     quantity = models.IntegerField(blank=False)
 
     def __str__(self):

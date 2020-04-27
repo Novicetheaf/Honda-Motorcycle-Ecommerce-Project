@@ -5,25 +5,27 @@
     <div class="container">
 
         <div class="row row-flex">
-        {% for product in products %}
+        {% for motorcycle in motorcycles %}
 
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
 
             <div class="panel-body">
-            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ motorcycle.image }}')"></div>
 
 
-                <h3 class="product-heading">{{ product.name }}</h3>
+                <h3 class="product-heading">{{ motorcycle.name }}</h3>
                 <div class="text-scroll">
-                    <p class="product-description">{{ product.description }}</p>
+                    <p class="product-description">{{ motorcycle.description }}</p>
                 </div>
-                <p class="product-price">€ {{ product.price }}</p>
+                <p class="product-price">Engine Size: {{ motorcycle.engine }} cc</p>
+                <p class="product-price">Weight: {{ motorcycle.weight }} kg</p>
+                <p class="product-price">Price: € {{ motorcycle.price }}</p>
 
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
+                <form method="post" action="{% url 'add_to_cart' motorcycle.id %}">
                     {% csrf_token %}
                     <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="99999" class="form-control" placeholder="Quantity" value="1">
+                        <input name="quantity" type="number" min="1" max="99999" class="form-control products-quantity" placeholder="Quantity" value="1">
                         <span class="input-group-btn">
                             <button class="btn btn-light" type="submit">Add</button>
                         </span> 
@@ -33,13 +35,13 @@
         </div>
         {% endfor %}
 
-        {% if products.count > 0 %}
+        {% if motorcycles.count > 0 %}
         {% else %}
         <div class="cart-empty py-5">
             <h1 class="display-4">Honda Motorcycle Shop</h1>
             <hr class="my-4">
             <p>Sorry! We don't have a motorcycle like that one!
-                <span><a class="navbar-a-link" href="{% url 'products' %}">Click here </a></span> to view products.
+                <span><a class="navbar-a-link" href="{% url 'motorcycles' %}">Click here </a></span> to view products.
             </p>
         </div>
         {% endif %}

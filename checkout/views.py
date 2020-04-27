@@ -5,7 +5,7 @@ from .forms import UserPaymentDetailsForm, UserAddressOrderForm
 from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
-from products.models import Product
+from motorcycles.models import Motorcycle
 import stripe
 
 # Create your views here.
@@ -26,7 +26,7 @@ def checkout(request):
             cart = request.session.get('cart', {})
             total = 0
             for id, quantity in cart.items():
-                product = get_object_or_404(Product, pk=id)
+                product = get_object_or_404(Motorcycle, pk=id)
                 total += quantity * product.price
                 order_line_item = OrderLineItem(
                     order = order,
@@ -49,7 +49,7 @@ def checkout(request):
             if customer.paid:
                 messages.error(request, "Payment successful!")
                 request.session['cart'] = {}
-                return redirect(reverse('products'))
+                return redirect(reverse('motorcycles'))
             else:
                 messages.error(request, "Payment unsuccessful")
         else:

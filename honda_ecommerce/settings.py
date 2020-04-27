@@ -15,6 +15,8 @@ import os
 if os.path.exists('env.py'):
     import env
 
+import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
     'accounts',
-    'products',
+    'motorcycles',
     'cart',
     'checkout',
     'home',
@@ -95,6 +97,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
 
 # Password validation

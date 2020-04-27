@@ -158,6 +158,10 @@ caption p {
     overflow-y: scroll;
 }
 
+.form-control.products-quantity {
+    margin-left: 15px;
+}
+
 /*--------------------------------------------Profile section*/
 
 .profile-article {
