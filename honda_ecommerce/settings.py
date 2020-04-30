@@ -93,7 +93,11 @@ WSGI_APPLICATION = 'honda_ecommerce.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
-if os.path.exists(DEBUG == True):
+if "DATABASE_URL" in os.environ:
+
+    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+    
+else:
 
     DATABASES = {
         'default': {
@@ -101,9 +105,7 @@ if os.path.exists(DEBUG == True):
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-else:
-
-    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+    
 
 
 # Password validation

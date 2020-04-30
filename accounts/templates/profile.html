@@ -45,8 +45,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
+                            <p>Items:</p> 
                             {% for motorcycle in order.line.all %}
-                                <p>Items:</p> 
                                 {{ motorcycle.product }} - Qty: {{ motorcycle.quantity }}
                             {% endfor %}
                         </div>
