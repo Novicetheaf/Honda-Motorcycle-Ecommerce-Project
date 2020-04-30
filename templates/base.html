@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{% static 'css/register-login-or-reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/cart.css' %}">
     <link rel="stylesheet" href="{% static 'css/checkout-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shop-reviews.css' %}">
     <!--Font Aw-->
     <script src="https://kit.fontawesome.com/4a795257bd.js" crossorigin="anonymous"></script>
     <!--Jquery-->
@@ -71,6 +72,9 @@
                         <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
                     {% endif %}
                     
+                    <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'get_shop_reviews' %}"><i class="fas fa-comment-alt"></i> Shop Reviews</a></li>
+                    <li class="navbar-icons"><a class="navbar-a-link" href="{% url 'add_shop_review' %}"><i class="fas fa-comment-alt"></i> Add Review</a></li>
+
                     <li id="search-form">
                         <form class="form-inline" action="{% url 'search' %}" method="GET">
                             <div class="form-row">
