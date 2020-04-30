@@ -1,0 +1,21 @@
+.shop-reviews-container, .shop-review-container, .shop-review-form-container {
+    background-color: white;
+    margin-top: 220px;
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+/*--------------------------------------------Shop Review*/
+
+.shop-review-container {
+    box-shadow: 5px 5px #1414148f;
+}
+
+/*---------------------------------------------Shop Review Form*/
+
+.shop-review-form-container {
+    padding: 25px;
+}
