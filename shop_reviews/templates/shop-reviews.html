@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shop-reviews-container">
+	<div class="row">
+		<div class="col-sm">
+			{% for review in shop_reviews %}
+			<h3>{{ review.review_title }}</h3>
+			<div class="row">
+				<div class="col-xs-9">
+					<p>{{ review.review_description }}</p>
+					<p><a href="{% url 'shop_review_detail' review.id %}" class="btn btn-default">Read more</a></p>
+					<p><span class="boldtext">Published on:</span> {{ review.review_date }} </p>
+					<p><span class="boldtext">Views:</span> {{review.review_views}}</p>
+				</div>
+			</div>
+			<hr>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
