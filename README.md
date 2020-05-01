@@ -25,7 +25,7 @@ A live demo can be viewed [here](https://honda-motorcycle-ecommerce.herokuapp.co
 ### User stories
 As an end-user I want to find all the motorcycles on this web site with ease, I want to add products to my shopping cart with ease and quick succession. I want to edit my shopping cart contents either by removing them or amending the quantity. I also want to be able to purchase products at the checkout page and add my adddress details so I can receive my motorcycle.
 
-Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code with python3, sql and jquery. I also want to his skills with Frameworks such as Django.
+Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code with python3, postgresql and jquery. I also want to his skills with Frameworks such as Django.
 
 Any recruiters who visits my web site will want to see if my site meets the requirments of the position they are recruiting for.
 
@@ -38,7 +38,7 @@ In this project my goal was to create consistancy in design flow, and colour sch
 The main goal in this project was to showcase my ability to use a full stack framework called Django which is a python based framework. It also shows my use of a postgresql database.
 
 ### Scope
-The scope of the project was to provide an application that the end-user could use while considering what kawasaki motorcycle suites them best and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
+The scope of the project was to provide an application that the end-user could use to purchase whatever honda motorcycle that they prefer best and would respond primarily on a mobile device, and showcase my design, python, Django and postgresql skills to date along with jquery, html, and css.
 
 ### Structure
 The key aspects of the navbar was to have the navbar fixed to the top of the screen for easy access which allows the user to navigate wherever and whenever.  
