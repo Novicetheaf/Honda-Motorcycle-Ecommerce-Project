@@ -1,20 +1,22 @@
 # **Honda Motorcycle Ecommerce Shop Final Project**
 **Edmund O Callaghan**
 
-This is my Honda Ecommerce Motorcycle shop, which gives the end-user an array of motorcycles that can be viewed for interested users. It also has the option for users to buy any of the listed products. The user can view their profile details and view their items in their cart.
+This is my Honda Ecommerce Motorcycle shop, which gives the end-user an array of motorcycles that can be viewed for interested users. It also has the option for users to buy any of the listed motorcycles
 
-The user can Search for items which contain letters or word structures, they can add products to their shopping cart and edit the quantity of each product within the cart.
+The user can view their profile details, past order details including delivery address and view their items in their shopping cart.
+
+The user can Search for items which contain letters or word structures, they can add motorcycles to their shopping cart and edit the quantity of each motorcycle within the cart.
 
 The shop uses a Stripe api to manage payments, currently the Stripe account is set to development mode, so you can only use stripes test cards for transactions, which can be found [here](https://stripe.com/docs/testing)
 
-The idea for this site is to show CRUD functionality with python3 and sql, Stripe api functionality using jquery. To show user authentication and Djangos CMS system based off the custom models for products and orders, which is only available to administration users and allows the administration user to add products and view orders and delete user accounts etc.
+The idea for this site is to show CRUD functionality with python3 and sql, Stripe api functionality using jquery. To show user authentication and Djangos CMS system based off the custom models for motorcycles and orders, which is only available to administration users and allows the administration user to add motorcycles and view orders and delete user accounts etc.
 
 The web app also contains forms of contacting me in my footer, via conact me modal, github and linkedin.
  
  
 ## Demo
 
-A live demo can be viewed [here](https://data-centric-dev-bike-reviews.herokuapp.com/ )
+A live demo can be viewed [here](https://honda-motorcycle-ecommerce.herokuapp.com/ )
 
 ![Desktop Demo](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/static/images/honda-shop-preview.PNG "Desktop Demo")
 
