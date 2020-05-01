@@ -41,16 +41,21 @@ The main goal in this project was to showcase my ability to use a full stack fra
 The scope of the project was to provide an application that the end-user could use to purchase whatever honda motorcycle that they prefer best and would respond primarily on a mobile device, and showcase my design, python, Django and postgresql skills to date along with jquery, html, and css.
 
 ### Structure
-The key aspects of the navbar was to have the navbar fixed to the top of the screen for easy access which allows the user to navigate wherever and whenever.  
+The navigation bar was meant to be easy to access all of the time, so with this in mind it was fixed to the top of the screen. 
 
-In the footer there is some links using the appropriate icons, the email icon which opens up the modal to contact me, and allows the user to contact me via email.
+The footer has some links using icons that suits appropriate function, the email icon which opens up the modal to contact me, and allows end-users to contact me via email.
 
-The user reviews, critic reviews, and add a review can be accessed by the navbar. Within the critic reviews section you have all of the set models from the pulled in from database, this schema does not allow the user to edit the critic reviews, as they're critic reviews and should remain on the site, the review details have been sourced from MCN motorcycle review website which is a popular go to site for looking up motorcycles reliablity, engine performance etc.
-The critic reviews section has the option to see more details on each particular model of kawasaki motorcycles. This option filters the particular model by its unique id and pulls in more details from the mongo schema.
+The navigation bar has a honda icon linked as a home button, a products button to show all motorcycles for sale, a cart button to show all items currently in the cart, a login button if the user is not logged in, a register button if the user is not logged in, shop reviews to show any reviews from users, add reviews button to add a user review and finally a search input box acompanied by a search button.
 
-For the user reviews you are brought to all of the available reviews regardless of dupicates, if I had more time I would have used a similar option to what was used for critic reviews, where you would see an overview of the user reviews, and go to see all particular models. This would then bring you to all the particular models and give you more details. In the user reviews section the user can edit and delete any user review, if I had more time I would have added a popup option asking if the user was sure they wanted to edit, delete or add a review.
+The motorcycle app will bring you to all motorcycles available, and the search field can limit the results by name to show similar motorcycles for example you can search for all bikes with 500 and it will limit results to all motorcycles with 500 in there name.
 
-For adding the review the user can only access this by the navbar which means it is allways accessible, I achieved this by means of a popup modal to add a review.
+The cart app will show you all items that have been added to the cart when you add them from the products page. 
+
+The login, register or forgot password pages: Login can be used for users who already have an account, and they will just need to enter their user name or email and password. If the user is new to the site and would like to purchase items from their cart, then they can use the register page or else they will not be able to purchase items. The forgot password option will only work for users who are using non-test based email accounts.
+
+The reviews page will show you all user reviews, and gives the user an opinon of the shop sellers before they commit to purchasing any motorcycles. The add review page will allow a user to leave their opinons of the shop and their experience.
+
+For adding the review the user can only access this by the navbar which means it is allways accessible, the button will redirect the users page to an add review page.
 
 ### Skeleton
 
