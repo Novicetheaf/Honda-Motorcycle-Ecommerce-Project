@@ -20,6 +20,7 @@ def checkout(request):
 
         if users_address_entry.is_valid() and users_payment_entry.is_valid():
             order = users_address_entry.save(commit=False)
+            order.user = request.user
             order.date = timezone.now()
             order.save()
 
