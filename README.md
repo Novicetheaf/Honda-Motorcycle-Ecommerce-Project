@@ -31,11 +31,11 @@ Any recruiters who visits my web site will want to see if my site meets the requ
 
 ### Strategy
 
-For this project I wanted a motorcycle review site specifically for kawasaki motorcycles. My aim was to evoke a positive emotional response from the user when they visited my site, and provide them with information regarding certain models of kawasaki motorcycles, they coud read reviews from critics, or users, they could edit a user review, delete and add their very own review or a particular model from the set models in the schema.
+For this project I wanted a motorcycle ecommerce site specifically for honda motorcycles. My aim was to evoke a positive emotional response from the user when they visited my site, and provide them with an array of honda's motorcycles, they coud read shop reviews from previous customers, they could edit a user review, and add their very own review of the shop from the set form structure.
 
-In this project my goal was to create consistancy in design flow, and colour schemes, as well as showing CRUD functionality. The web site is designed mobile first, in regards to content layout and css media queries, but the site does respond well on desktop, laptop and tablet screens.
+In this project my goal was to create consistancy in design flow, and colour schemes. The site is designed to showcase motorcycles for sale, allow users to create an account, and using there account they can go to the checkout page and fill in the form and add payment details. The web site is designed mobile first, in regards to content layout and css media queries, but the site does respond well on desktop, laptop and tablet screens.
 
-The main goal in this project was to showcase my ability to use CRUD functionality, (create, read, update and delete)
+The main goal in this project was to showcase my ability to use a full stack framework called Django which is a python based framework. It also shows my use of a postgresql database.
 
 ### Scope
 The scope of the project was to provide an application that the end-user could use while considering what kawasaki motorcycle suites them best and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
