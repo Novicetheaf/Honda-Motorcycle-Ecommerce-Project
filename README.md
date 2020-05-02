@@ -60,17 +60,32 @@ For adding the review the user can only access this by the navbar which means it
 ### Skeleton
 **Still left to do!**
 
-[Mobile Design wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/mobile-wireframe.jpg)
+[Index page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/index-page-wireframe.jpg)
 
-[Desktop Design wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/desktop-wireframe.jpg)
 
-[Critic reviews wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/critic-reviews.jpg)
+[Motorcycles page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/motorcycle-items-wireframe.jpg)
 
-[User reviews wireframe](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/wireframes/user-reviews.jpg)
 
-[Add review and edit wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/add-reviews-and-edit-wireframe.jpg)
+[Shopping cart page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/shopping-cart-wireframe.jpg)
 
-[Contact me modal wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/contact-me-modal-wireframe.jpg)
+
+[Profile page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/profile-wireframe.jpg)
+
+
+[Checkout page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/checkout-wireframe.jpg)
+
+
+[Login, register or reset email wireframes](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/login-register-or-forgot-password-wireframe.jpg)
+
+
+[User reviews wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/index-page-wireframe.jpg)
+
+
+[User review, add review and edit wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/user-review-add-or-edit-wireframe.jpg)
+
+
+[Contact me modal wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/contact-modal-wireframe.jpg)
+
 
 ### Surface
 
