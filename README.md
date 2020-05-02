@@ -58,6 +58,7 @@ The reviews page will show you all user reviews, and gives the user an opinon of
 For adding the review the user can only access this by the navbar which means it is allways accessible, the button will redirect the users page to an add review page.
 
 ### Skeleton
+**Still left to do!**
 
 [Mobile Design wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/mobile-wireframe.jpg)
 
@@ -73,18 +74,12 @@ For adding the review the user can only access this by the navbar which means it
 
 ### Surface
 
-#### Orange shades: 
-rgba(224, 87, 8, 0.82);
+#### Red shades: 
+rgb(189, 84, 52);
 
-#### Grey scaled shades are also included within the application.
+#### White shades:
 
-#222425;
-
-#282929;
-
-#222425f5;
-
-rgba(196, 196, 196, 0.95);
+rgb(255, 255, 255);
 
 The colour scheme I was going for was to go with the background motorcycle image Kawasaki H2R. This created a pleasing to the eye, and above all evoking a positive response from the end-user.   
 

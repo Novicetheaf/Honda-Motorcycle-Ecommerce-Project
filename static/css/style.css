@@ -11,11 +11,11 @@ body {
 }      
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .nav li a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -33,7 +33,7 @@ article {
 
 .btn-light {
      background-color: rgb(189, 84, 52);
-     color: white;
+     color: rgb(255, 255, 255);
 }
 
 /*----------------------------------------Index*/
