@@ -58,7 +58,6 @@ The reviews page will show you all user reviews, and gives the user an opinon of
 For adding the review the user can only access this by the navbar which means it is allways accessible, the button will redirect the users page to an add review page.
 
 ### Skeleton
-**Still left to do!**
 
 [Index page wireframe](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/wireframes/index-page-wireframe.jpg)
 
@@ -107,10 +106,19 @@ The colour scheme I was going for was to go with the background motorcycle image
 5. JQuery (3.4.1)
 6. Emailjs (2.3.2)
 7. Python3
-8. Flask (1.1.1)
-9. PyMongo (3.10.1)
-10. Werkzeug (1.0.0)
+8. Django (1.11.29)
+9. Stripe (2.45.0)
+10. Pillow (7.1.1)
+11. Django forms bootstrap (3.1.0)
+12. Boto3 (1.13.0)
+13. botocore (1.16.0)
+14. Heroku Postgresql database
+15. Gunicorn (20.0.4)
+16. AWS s3transfer (0.3.3)
+17. Django storages (1.9.1)
 
+
+**Still left to do!**
 ## Features
  
 ### Existing Features
