@@ -53,14 +53,6 @@ article {
     margin-top: 90px;
 }
 
-/*----------------------------------------Page not found*/
-
-#page-not-found {
-    padding: 200px;
-    color: white;
-    text-shadow: 2px 2px #0c0c0c79;
-}
-
 /*----------------------------------------Navigation Bar*/
 
 .navbar-icons {
@@ -186,6 +178,14 @@ caption p {
     text-align: center;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
 
+}
+
+/*----------------------------------------Page not found*/
+
+#page-not-found {
+    padding: 200px;
+    color: white;
+    text-shadow: 2px 2px #0c0c0c79;
 }
 
 /*--------------------------------------------Footer Section*/
