@@ -152,7 +152,7 @@ I would also like to add the option to filter the users reviews and also have pa
 I would like to add a pre-order option for customers to pay a deposit for a motorcycle so that it can be ordered and then in orders section to add a pay remainder option if you have pre-ordered the motorcycle.
 
 ## Testing 
-Testing ID: test-data-centric-project-eoc
+Testing ID: Honda-Motorcycle-Ecommerce-Project-eoc
 ### Tested by: 
 Edmund O Callaghan
 
@@ -161,22 +161,19 @@ Edmund O Callaghan
 - AMD Desktop, 
 - DELL Latitude E5470 Laptop, 
 - Fujitsu Q702 Ultra book,
-- ZTE Axon 7 Mobile,
+- Axon 7 mini Mobile,
 - Iphone X, 
 - Iphone 6, 
 - Samsung S9.
 
 ### Tested Resolutions: 
-320px x 640px to 4K resolution: 
-
-Note: On 4k screens the site does not support the view height of the screen.  
+349px x 640px to 4K resolution  
 
 ### Tested Browsers:
 - FireFox,
 - Google Chrome, 
 - Edge. 
 
-- Note: on edge browser the colour of the contact me modal and the add review modal are not supported by edge.
 ### Code validation Testing:
 
 [Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
