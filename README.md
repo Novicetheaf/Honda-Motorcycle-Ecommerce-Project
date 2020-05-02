@@ -91,9 +91,16 @@ For adding the review the user can only access this by the navbar which means it
 #### Red shades: 
 rgb(189, 84, 52);
 
+rgb(204, 0, 0);
 #### White shades:
 
 rgb(255, 255, 255);
+
+#Grey Shades:
+
+'#cac8c8c9;'
+
+rgba(0, 0, 0, 0.388);
 
 The colour scheme I was going for was to go with the background motorcycle image Kawasaki H2R. This created a pleasing to the eye, and above all evoking a positive response from the end-user.   
 
