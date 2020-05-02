@@ -102,7 +102,7 @@ rgb(255, 255, 255);
 
 rgba(0, 0, 0, 0.388);
 
-The colour scheme I was going for was to go with the background motorcycle image Kawasaki H2R. This created a pleasing to the eye, and above all evoking a positive response from the end-user.   
+The colour scheme I was going for was to go with Hondas motorcycles colour scheme. This created a pleasing to the eye, and above all evoking a positive response from the end-user.   
 
 ## Technologies
 
