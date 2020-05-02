@@ -23,6 +23,7 @@ def shop_review_detail(request, pk):
     return render(request, "shop-review-detail.html", {'shop_review': shop_review})
 
 
+@login_required
 def add_or_edit_shop_review(request, pk=None):
     """
     Allows us to add a review

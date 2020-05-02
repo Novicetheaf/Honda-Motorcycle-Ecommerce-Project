@@ -125,28 +125,31 @@ The colour scheme I was going for was to go with Hondas motorcycles colour schem
 17. Django storages (1.9.1)
 
 
-**Still left to do!**
 ## Features
  
 ### Existing Features
 
-- The core features of my site is to provide information about certain models of kawasaki motorcycles for the user to figure out which bike best suites their needs. The user can add their own review and edit reviews, currently there is no access key required to edit or delete a review, this will be updated in the future, but for this initial release this feature won't be available.
+- The core feature of my site is to provide an outlet for a interested user to purchase a Honda motorcycle(s). The user can view motorcycles and add them to the cart but as soon as they go to checkout and if they're not signed in, they will be brought to the sign in page, and once they either create and account from the link in the sign in page saying do you have an account, if not click here, only then will they be able to proceed to the checkout, this will automatically redirect you once you have signed in or up. 
 
-- For my navigation bar I added some jquery to change the colour upon scrolling down through the site. This evokes a positive response from the user and makes it easier to see the navigation elements within the navbar. It is not need before scrolling due to the background colours of the top section of the background image. I also made the navbar fixed to allow constant accessiblity for the user.
+- The user can add their own user review based on their shopping expierence and edit reviews, currently there is only a login required in order to add a review and on editing a review, this will be updated in the future so that the user who is logged in can only edit there own review, but for this initial release this feature won't be available due to limited time constraints.
+
+- For my navigation bar I have it set fixed to the top of the screen for constant accessiblity for the user. This evokes a positive response from the user and makes it easier to find the navigation elements within the navbar. The navigation bar features a search input box and button, this will allow the user to search for items based on similar wording.
 
 - For the footer section I have a contact me logo which bring up a contact me modal form, it also includes social external links to my github and linkedin.
 
-- Within the critics section you can view all particular kawasaki models and you can choose the option `see more` to filter that particular model and show more detiled information from the database.
+- For the reviews section you can get a glimpse at all the site reviews, and once you click on the see more/read more button you will be able to view a detailed description of the review.
 
-- For the user reviews you can view all current models within the database and edit or delete any current models. 
+- As the user you can view all current models of motorcycles within the database in the motorcycle/products page. Only the admin user has the accessiblity and rights to manipulate the motorcycles, orders etc.
 
-- In the navigation bar you can choose the `add review` option and this will bring up a modal and let you add a new review based on the schema of models.
+- In the navigation bar you can choose the `add review` option and this will bring you to the add review page and let you add a new review based on the schema of models and forms.py files for shop_reviews.
 
 ### Features Left to Implement
 
-If I had more time I would like to add a requirement for an access key to edit or delete user reviews, this will be updated in the future, but for this initial release this feature won't be available, as it would result in a fragmented project.
- 
-I would also like to add the option to filter the users reviews and also have pagination for user reviews, just in case the site receives more traffic in the future, for the moment though this site doesn't have any need for pagination.
+If I had more time I would like to add a requirement for an access key to edit user reviews, this will be updated in the future, but for this initial release this feature won't be available, due to limited time constraints.
+
+I would also like to add the option to filter the users reviews and also have pagination for motorcycles and user reviews, just in case the site receives more traffic in the future, for the moment though this site doesn't have any need for pagination.
+
+I would like to add a pre-order option for customers to pay a deposit for a motorcycle so that it can be ordered and then in orders section to add a pay remainder option if you have pre-ordered the motorcycle.
 
 ## Testing 
 Testing ID: test-data-centric-project-eoc
