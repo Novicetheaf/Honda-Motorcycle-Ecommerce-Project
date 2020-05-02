@@ -53,6 +53,14 @@ article {
     margin-top: 90px;
 }
 
+/*----------------------------------------Page not found*/
+
+#page-not-found {
+    padding: 200px;
+    color: white;
+    text-shadow: 2px 2px #0c0c0c79;
+}
+
 /*----------------------------------------Navigation Bar*/
 
 .navbar-icons {
