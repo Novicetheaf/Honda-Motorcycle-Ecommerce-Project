@@ -5,14 +5,10 @@ from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from checkout.models import Order
+from home.views import index
 
 
-# Create your views here.
-def index(request):
-    """A view that displays the index page"""
-    return render(request, "index.html")
-
-
+# logout the user --
 def logout(request):
     """A view that logs the user out and redirects back to the index page"""
     auth.logout(request)
@@ -20,6 +16,7 @@ def logout(request):
     return redirect(reverse('index'))
 
 
+# Log user in --
 def login(request):
     """A view that manages the login form"""
     if request.method == 'POST':
@@ -46,12 +43,14 @@ def login(request):
     return render(request, 'login.html', args)
 
 
+# View profile, login is required --
 @login_required
 def profile(request):
     """A view that displays the profile page of a logged in user"""
     return render(request, 'profile.html')
 
 
+# Register account to sign in --
 def register(request):
     """A view that manages the registration form"""
     if request.method == 'POST':
