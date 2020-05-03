@@ -230,16 +230,16 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 **Note:** The images on the cards are reduced along with the card size between 600px and 999px, as expected.
 
-
-
-#### See more critic review Page
+#### Shopping cart Page
 
 | Element Tested | Expected outcome | Outcome |
 | --- | --- | --- |
-| Desktop(s) | The card takes up 75% of the screen width and has a scroll option for the detailed description | as expected |
+| Desktop(s) | White background for checkout takes up 100% width, card for motorcycle placed within in similar sized card to motorcycles page, with exception of the amend button, the checkout btn is placed to the right center | as expected |
 | Laptop(s) | The same as desktop | as expected |
-| Tablet(s) | The layout changes where the image stacks on top of the preview description and the overall description stack under the preview description while maintaining the scroll option  | as expected |
-| Mobile(s) | The layout remains the same as the tablet bar the content width, which is now 100% of the screen's width. There is no longer a scroll option for the detailed description | as expected |
+| Tablet(s) | The same as desktop bar the motorcycle card which only fit two in a row and they begin to stack under if there is more then 2 unique items in the cart. The checkout button now goes to the far right | as expected |
+| Mobile(s) | The layout remains the same as the tablet bar the checkout button positon, which is now center rigth of the screen. | as expected |
+
+*Note: The checkout button becomes hidden between 577px and 659px, this issue was left unfixed due to time constraints, and an issue with gitpod workspace which took valuble time from me where I could have been perfecting the breakpoints and styling.
 
 ### **Functional testing** 
 
