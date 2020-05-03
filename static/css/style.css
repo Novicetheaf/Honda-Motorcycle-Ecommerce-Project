@@ -1,3 +1,5 @@
+/*------------------------------General css*/
+
 body {
 
     background: url("../images/honda-background-image.jpg") no-repeat center center fixed;
@@ -19,8 +21,10 @@ a {
 }
 
 .container {
+
     padding-left: 0;
     padding-right: 0;
+    
 }
 
 li {
@@ -32,19 +36,23 @@ article {
 }
 
 .btn-light {
+
      background-color: rgb(189, 84, 52);
      color: rgb(255, 255, 255);
+
 }
 
 /*----------------------------------------Index*/
 
 .custom-jumbotron {
+
     margin-top: 70px;
     background-color: #fdfdfdc9;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
+
 }
 
 /*----------------------------------------User Message*/
@@ -68,6 +76,7 @@ article {
 }
 
 .badge {
+
     padding-left: 9px;
     padding-right: 9px;
     -webkit-border-radius: 9px;
@@ -75,6 +84,7 @@ article {
     border-radius: 9px;
     color:#070707;
     background-color: #8cbbd7;
+
 }
 
 .label-warning[href],
@@ -83,18 +93,23 @@ article {
 }
 
 .navbar-a-link:hover { 
+
     text-decoration: none;
     color: rgb(189, 84, 52);
+
 } 
 
 .navbar-dark .navbar-toggler {
+
     color: rgb(220, 0, 0);
     border-color: rgba(220, 0, 0, 0.4);
+    
 }
 
 /*------------------------------------------Products*/
 
 .product {
+
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -102,6 +117,7 @@ article {
     height: 350px;
     margin: 0 auto;
     padding-top: 45px;
+
 }
 
 .product-heading {
@@ -113,27 +129,35 @@ caption p {
 }
 
 .row.row-flex {
+
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+
 }
 
 .panel-default {
+
     border-color: transparent;
     padding: 0 10px;
+
 }
 
 .panel-body {
+
     height: 100%;
     border: 1px solid #ddd;
     background-color: white;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
+
 }
 
 .product-description {
+
     height: 70px;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .product-price {
@@ -146,8 +170,10 @@ caption p {
 }
 
 .input-group-btn {
+
     padding-left: 5px;
     padding-right: 15px;
+
 }
 
 .form-control {
@@ -177,51 +203,68 @@ caption p {
     margin-right: auto;
     text-align: center;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
+    padding-right: 5px;
+    padding-left: 5px;
 
 }
 
 #profile-container {
+
     padding: 25px;
     text-align: center;
+
 }
 
 #profile-orders-hr {
+
     color: rgb(39, 38, 38);
     margin-top: 20px;
+
 }
 
 /*----------------------------------------Page not found*/
 
 #page-not-found {
+
     padding: 200px;
     color: white;
     text-shadow: 2px 2px #0c0c0c79;
+
 }
 
 /*--------------------------------------------Footer Section*/
 
 .footer-icons {
+
     font-size: 2.7em;
     color: rgb(204, 0, 0);
+
 }
 
 .footer-text {
+
     text-align: center;
     padding-top: 125px;
     color: rgb(204, 0, 0);
+
 }
 
 footer {
+
     background-color: rgb(27, 20, 20);
     height: 225px;
     margin-top: 200px;
+
 }
 
 /*---------------------------------------------Media Query*/
 
+/*-------------Products styling for bigger then 550px-*/
+
 @media only screen and (min-width: 550px) {
 
     .product {
+
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -234,9 +277,12 @@ footer {
 
 }
 
+/*-------------Products styling for bigger then 1200px-*/
+
 @media only screen and (min-width: 1200px) {
 
     .product {
+
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -249,11 +295,26 @@ footer {
 
 }
 
+/*-------------Jumbotron width for bigger then 550px-*/
+
 @media only screen and (min-width: 550px) {
 
     .custom-jumbotron {
 
         width: 75%;
+
+    }
+
+}
+
+/*-------------User profile styling for bigger then 590px-*/
+
+@media only screen and (min-width: 590px) {
+
+    .profile {
+
+        padding-left: 35px;
+        padding-right: 35px;
 
     }
 
