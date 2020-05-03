@@ -234,12 +234,23 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 | Element Tested | Expected outcome | Outcome |
 | --- | --- | --- |
-| Desktop(s) | White background for checkout takes up 100% width, card for motorcycle placed within in similar sized card to motorcycles page, with exception of the amend button, the checkout btn is placed to the right center | as expected |
+| Desktop(s) | White background for cart takes up 100% width, card for motorcycle placed within in similar sized card to motorcycles page, with exception of the amend button, the checkout btn is placed to the right center | as expected |
 | Laptop(s) | The same as desktop | as expected |
 | Tablet(s) | The same as desktop bar the motorcycle card which only fit two in a row and they begin to stack under if there is more then 2 unique items in the cart. The checkout button now goes to the far right | as expected |
 | Mobile(s) | The layout remains the same as the tablet bar the checkout button positon, which is now center rigth of the screen. | as expected |
 
-*Note: The checkout button becomes hidden between 577px and 659px, this issue was left unfixed due to time constraints, and an issue with gitpod workspace which took valuble time from me where I could have been perfecting the breakpoints and styling.
+**Note:** The checkout button becomes hidden between 577px and 659px, this issue was left unfixed due to time constraints, and an issue with gitpod workspace which took valuble time from me where I could have been perfecting the breakpoints and styling.
+
+#### Checkout Page
+
+| Element Tested | Expected outcome | Outcome |
+| --- | --- | --- |
+| Desktop(s) | White background for checkout takes up 85% width, the motorcycle cards are now much wider, they have less details and take up 3 spaces within the container of the checkout, the payment details in place below the items and it takes up 50% of the width of the container, the submit button is centered | as expected |
+| Laptop(s) | The same as desktop, bar the issue where the images are overflowing which has been mentioned below | as expected |
+| Tablet(s) | The container is now at 100% width and the payment form is now taking 95% of the container width, the submit button is now to the far left, motorcycles are now stacked one per row | as expected |
+| Mobile(s) | The layout remains the same as the tablet | as expected |
+
+**Note:** At 1280px to 1200px the images for the motorcycles within the cart start to overflow over the cards, this issue was worse but breakpoints were added to amend this issue, however this small range of screen width was left unamended due to time contraints.
 
 ### **Functional testing** 
 
