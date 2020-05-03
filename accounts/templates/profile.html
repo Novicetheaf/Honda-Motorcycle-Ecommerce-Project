@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-
 <article class="cart-article pt-1 pb-5 mx-auto">
     <div id="profile-container" class="container">
         <div class="row">
-        <div class="profile py-5">
+        <div class="profile p-5">
             <h1 class="display-4">Honda Motorcycle Shop</h1>
             <hr class="my-4">
             <h1>Welcome {{ user.username }}!</h1>
@@ -15,7 +14,7 @@
         <div class="row">
 
         {% for order in user.orders.all %}
-            <hr>
+            <hr id="profile-orders-hr">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -52,15 +51,11 @@
                         </div>
                     </div>
                 </div>
-            <hr>
         {% endfor %}
 
         </div>
 
     </div>
 </article>
-
-
-
 
 {% endblock %}

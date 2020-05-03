@@ -185,6 +185,11 @@ caption p {
     text-align: center;
 }
 
+#profile-orders-hr {
+    color: rgb(39, 38, 38);
+    margin-top: 20px;
+}
+
 /*----------------------------------------Page not found*/
 
 #page-not-found {
