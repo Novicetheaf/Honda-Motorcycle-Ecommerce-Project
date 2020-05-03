@@ -463,11 +463,13 @@ I used [Pinterest](https://www.pinterest.com/) for my background image, and othe
 
 ### Acknowledgements
 
-I used [MCN's site](https://www.motorcyclenews.com/) for my critic reviews content description section, and for general information about each motorcycle that was used in this project.
+I used [MCN's site](https://www.motorcyclenews.com/) for motorcycle stats.
 
 Modal Contact Form outer sections Reference can be found [here](https://mdbootstrap.com/docs/jquery/modals/forms/)
 
 Bootstrap code I used to look up for reference purposes, I used [bootstrap.com](https://getbootstrap.com/)
+
+Some of the core apps, such as the accounts app are based off the Ci documentation on github & tutorials on [Ci's site](https://courses.codeinstitute.net/courses/)
 
 **This project is for educational purposes.** 
 
