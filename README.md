@@ -431,43 +431,19 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
         os.environ.setdefault("DATABASE_URL", "X")
 
 
-## MongoDb Schema
+## Database Schema for custom models
 
-### The critic's MongoDB collection `critic reviews` takes the following schema.
+### Motorycles
 
-{
-    "_id": {
-        "$oid": "5e63de321c9d440000a20906"
-    },
+|  |  Motorcycle |
+| --- | --- |
+| name | CharField(max_length=199, default='') | 
+| engine | IntegerField(default='') |
+| weight | IntegerField(default='') |
+| description | TextField(max_length=350) |
+| price | DecimalField(max_digits=9, decimal_places=2) |
+| image | ImageField(upload_to='images') |
 
-    "image": "",
-
-    "model": "",
-
-    "price": "",
-
-    "engineSize": "",
-
-    "power": "",
-
-    "insuranceGroup": "",
-
-    "seatHeight": "",
-
-    "overallRating": "",
-
-    "overallDescription": "",
-
-    "rideQualityAndBrakes": "",
-
-    "Engine": "",
-
-    "BuildQualityAndReliability": "",
-
-    "InsuranceRunningCostsValue": "",
-
-    "Equipment": ""
-}
 
 ### The user's MongoDB collection `user reviews` takes the following schema.
 
