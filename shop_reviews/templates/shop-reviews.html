@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container shop-reviews-container">
-	<div class="row">
-		<div class="col-sm">
-			{% for review in shop_reviews %}
-			<h3>{{ review.review_title }}</h3>
-			<div class="row">
-				<div class="col-xs-9">
-					<p>{{ review.reviewer_name }}</p>
-					<p><a href="{% url 'shop_review_detail' review.id %}" class="btn btn-default">Read more</a></p>
+    <div class="row">
+		{% for review in shop_reviews %}
+		<div class="col-xs-12 offset-xs-0 col-sm-9 offset-sm-0 mx-sm-auto col-md-9 offset-md-3 col-lg-4 offset-lg-0">
+			<div class="card mt-3">
+				<div class="card-body">
+					<h5 class="card-title">{{ review.review_title }}</h5>
 					<p><span class="boldtext">Published on:</span> {{ review.review_date }} </p>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
 					<p><span class="boldtext">Views:</span> {{review.review_views}}</p>
+					<p><a href="{% url 'shop_review_detail' review.id %}" class="btn btn-light">Go to review</a></p>
 				</div>
 			</div>
-			<hr>
-			{% endfor %}
 		</div>
-	</div>
+		{% endfor %}
+    </div>
 </div>
 {% endblock %}
