@@ -176,6 +176,8 @@ Edmund O Callaghan
 
 ### Code validation Testing:
 
+- Validation code testing not complete, due to gitpod workspace corruption.
+
 [Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
 
 [Critics Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/critics-page-validation.PNG)
@@ -195,11 +197,11 @@ Edmund O Callaghan
 [CSS Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/css-validation.PNG)
 
 ### User stories
-For my user stories testing, I had to put myself in the shoes of the user, anyone looking for a quick way to get information about potential kawasaki modals. They would want to see expierenced riders opinons on the matter and detailed descriptions. They would also be looking for more personal and like minded reviews, to get an idea what the everyday rider thinks of these bikes.
+For my user stories testing, I had to put myself in the shoes of the user, anyone looking to purchase honda motorcycles. They would want to be given an array of different types of bikes available. They would also be looking to find out what customers thought of the shopping expierence at the Honda motorcycles shop. They would want to be able to make payments for the motorcycle(s) that peaks their interest. They would need a way to view their orders to make sure that the address entered was correct. They would need to be able to create an account in order to store what is in their cart and orders.
 
-The everday user will want to gain access to the applications quickly and will be looking for quick input(s), that give back what they are looking for, like user reviews brings you straight to the reviews at hand, and critic reviews does the same, and the see more option is easy to interpret, which brings you to a detailed review of each particular motorcycle.
+The everday user will want to gain access to the applications quickly and will be looking for quick input(s), that give back what they are looking for, shop reviews brings you straight to the shop reviews at hand, products/motorcycles does the same, add reviews, search box, log out, etc.
 
-They want to be given clean and clear directions as to where they should navigate to in order to achieve their intentions, whether that be sending an email, or adding a review themselves.
+They want to be given clean and clear directions as to where they should navigate to in order to achieve their intentions, whether that be viewing motorcycles, viewing profile, viewing cart, navigating to checkout, making a payment, signing in, registering, sending an email, or adding a shop review themselves.
 
 As a recruiter or employer I want to find out with quick succession, whether this candidate has the required skills as a database designer/developer for the job spec. When you arrive at the site you are greeted with a professional, concise and impactful website, this showcases good design and clear intentions as to what it is. 
 
