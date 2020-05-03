@@ -410,6 +410,27 @@ In order to run the site locally, you can use the clone this site by using the f
 If you need anymore help in cloning this repo, then go to GitHub Help [page](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 
+- Create an env.py file in the projects base directory, then enter input the following:
+
+       os.environ.setdefault("SECRET_KEY", "x")
+       
+       os.environ.setdefault("STRIPE_PUBLISHABLE", "x")
+       
+       os.environ.setdefault("STRIPE_SECRET", "x")
+       
+       os.environ.setdefault("AWS_ACCESS_KEY_ID", "x")
+       
+       os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "x")
+       
+*Note:
+        By default django will create a local sqlitedb, you can however choose one from heroku, go to resources,
+        then type Heroku Postgres in the addons input field.
+        
+        To link the database use the following in your settings.py file:
+        
+        os.environ.setdefault("DATABASE_URL", "X")
+
+
 ## MongoDb Schema
 
 ### The critic's MongoDB collection `critic reviews` takes the following schema.
