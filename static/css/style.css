@@ -180,6 +180,11 @@ caption p {
 
 }
 
+#profile-container {
+    padding: 25px;
+    text-align: center;
+}
+
 /*----------------------------------------Page not found*/
 
 #page-not-found {
