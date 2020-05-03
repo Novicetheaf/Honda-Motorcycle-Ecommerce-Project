@@ -312,7 +312,9 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 ## Deployment
 
-The project is hosted using heroku as github pages doesn't support mongodb.
+
+
+The project is hosted using heroku as github pages doesn't support a postgresql database, It also uses AWS for my static folder, which containes all javascript, css and images.
 
 In order to deploy your site to heroku you will need to follow these steps:
 
@@ -322,9 +324,9 @@ In order to deploy your site to heroku you will need to follow these steps:
 
 - Now go to your [Heroku dashboard](https://dashboard.heroku.com)
 
-- From this point you should see an option to the right of the screen called        'New' just under your navigation bar. if you can't find it try this link        [Create new app](https://dashboard.heroku.com/new-app)
+- From this point you should see an option to the right of the screen called 'New' just under your navigation bar. if you can't find it try this link        [Create new app](https://dashboard.heroku.com/new-app)
 
-- From this point you want to choose a unique name as it won't allow you to         choose one already taken.
+- From this point you want to choose a unique name, as it won't allow you to choose one already taken.
 
 - You'll need to set the region for where the servers will be based, so that is up to you, it can be US or EU, if most users willl be from EU, then you should choose EU.
 
@@ -343,23 +345,26 @@ In order to deploy your site to heroku you will need to follow these steps:
 
 - Before deployment you will need to make sure your procfile, requirements.txt have been created and are up to date in your IDE, if not then please add both to your IDE and then follow the next steps.
 
-        Procfile contents: 'web: python app.py'
+        Procfile contents: 'web: gunicorn honda_ecommerce.wsgi:application'
 
         requirements.txt file contents:
 
-            Click==7.0
-
-            dnspython==1.16.0
-
-            Flask==1.1.1
-
-            Flask-PyMongo==2.3.0
-
-            itsdangerous==1.1.0
-
-            pymongo==3.10.1
-
-            Werkzeug==1.0.0
+            boto3==1.13.0
+            botocore==1.16.0
+            dj-database-url==0.5.0
+            Django==1.11.29
+            django-forms-bootstrap==3.1.0
+            django-storages==1.9.1
+            docutils==0.15.2
+            gunicorn==20.0.4
+            jmespath==0.9.5
+            Pillow==7.1.1
+            psycopg2==2.7.3.1
+            pylint-django==2.0.15
+            pylint-plugin-utils==0.6
+            pytz==2019.3
+            s3transfer==0.3.3
+            stripe==2.45.0
 
 
 - In order to deploy the site to heroku use the following commands in you cli on your IDE:
@@ -375,12 +380,24 @@ In order to deploy your site to heroku you will need to follow these steps:
     - Go to the '**Heroku Dashboard**' and look for **Settings**.
     - Then click the option to **Reveal Config Vars**.
     - Enter in the variable names and their values
-        - Name: **YourSitesURIName** value: Database url here
-        - Name: **IP**  value: 0.0.0.0
-        - Name: **Port** value: 5000
+    
+        SECRET_KEY = 'x'
+        STRIPE_PUBLISHABLE = 'x'
+        STRIPE_SECRET = 'x'
+        AWS_ACCESS_KEY_ID = 'x'
+        AWS_SECRET_ACCESS_KEY = 'x'
+        DATABASE_URL = 'x'
 
+- If you want to use AWS to host your static folder like I have, you will need to create a bucket in aws's s3 and edit the variables in settings.py.
 
-In order to run the site locally, you can use the clone this site by using the following link in your terminal: `git clone https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews.git` To remove any connections with Github repository use the following in your terminal: `git remote rm origin`.  
+*Note in order to push the static files to your s3 bucket, you must run this command: python3 manage.py collectstatic
+
+- In order to update the database with the models created from this project, you will need to run the following commands to update the postgresql database: 
+
+ python3 manage.py makemigrations
+ python3 manage.py migrate
+
+In order to run the site locally, you can use the clone this site by using the following link in your terminal: `git clone https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project.git` To remove any connections with Github repository use the following in your terminal: `git remote rm origin`.  
 
 If you need anymore help in cloning this repo, then go to GitHub Help [page](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
