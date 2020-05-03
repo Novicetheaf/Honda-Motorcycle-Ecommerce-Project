@@ -444,32 +444,17 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 | price | DecimalField(max_digits=9, decimal_places=2) |
 | image | ImageField(upload_to='images') |
 
+### Shop Reviews
 
-### The user's MongoDB collection `user reviews` takes the following schema.
+|  |  ShopReview |
+| --- | --- |
+| review_title | CharField(max_length=100) | 
+| reviewer_name | CharField(default='', max_length=50) |
+| review_description | TextField(max_length=200) |
+| review_date | DateTimeField(blank=True, null=True, default=timezone.now) |
+| review_views | IntegerField(default=0) |
 
-{
-    "_id": {
-        "$oid": "5e63dfe51c9d440000a20907"
-    },
-
-    "image": "",
-
-    "model_select": "",
-
-    "overall_rating": "",
-
-    "name": "",
-
-    "ride_quality_and_brakes": "",
-
-    "engine": "",
-
-    "build_quality_and_reliability": "",
-
-    "running_costs_and_value": "",
-
-    "review_summary": ""
-}
+<hr>
 
 ## Credits
 
