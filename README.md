@@ -382,19 +382,27 @@ In order to deploy your site to heroku you will need to follow these steps:
     - Enter in the variable names and their values
     
         SECRET_KEY = 'x'
+        
         STRIPE_PUBLISHABLE = 'x'
+        
         STRIPE_SECRET = 'x'
+        
         AWS_ACCESS_KEY_ID = 'x'
+        
         AWS_SECRET_ACCESS_KEY = 'x'
+        
         DATABASE_URL = 'x'
 
 - If you want to use AWS to host your static folder like I have, you will need to create a bucket in aws's s3 and edit the variables in settings.py.
 
-*Note in order to push the static files to your s3 bucket, you must run this command: python3 manage.py collectstatic
+*Note in order to push the static files to your s3 bucket, you must run this command: 
+
+  python3 manage.py collectstatic
 
 - In order to update the database with the models created from this project, you will need to run the following commands to update the postgresql database: 
 
  python3 manage.py makemigrations
+ 
  python3 manage.py migrate
 
 In order to run the site locally, you can use the clone this site by using the following link in your terminal: `git clone https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project.git` To remove any connections with Github repository use the following in your terminal: `git remote rm origin`.  
