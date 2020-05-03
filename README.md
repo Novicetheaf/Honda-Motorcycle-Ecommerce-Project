@@ -263,6 +263,26 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 **Note:** The styling for this section is quite basic and could definatly do with more styling to make it consistantly professional, but due to time constraints this profile section will need to be updated at a later date but for now it serves its purpose quite well.
 
+#### Shop Reviews Page
+- With regards to the shop reviews section the container for the reviews are again confined witin the 1140px max width, they have a white background and 3 cards in one row, they are stacked if the number goes over 3, as soon as the screen size gets to 933px the cards for each review are now only in 1 card per row, and are again stacked. The content within are centered. Once you get down to 550px the cards take up 100% of the width and with a small margin left to right, bar this there is no change to the reviews section. 
+
+- As expected
+
+#### Shop Review Page
+-With regards to the individual review the review container is again within the 1140px width maximum, and the card is centered within this container, the content is left aligned. Once you get down as far as 1000px the breakpoints change and the max width is now 720px, bar this there is no change. At 575px the container for the card takes 100% width, bar this there is no change.
+
+- As expected
+
+#### Add Review and Edit Pages
+- The add reviews and edit reviews page is contained within a 1140px container, and a 720px container for under 1000px, and it takes up 100% width for mobile view. The form input box's and save button are centered within this container.
+
+- As expected
+
+#### Login, Register And Forgot Password
+- The login and register page is set with a max width of 1000px and the forgot page is set with a max width of 800px for desktop view, once the screen width gets down below 1000px the container takes up 100% width, and this is the same for the forgot password option at below 800px.
+
+**Note:** On the register page there is a qoute 'aleady got an account', and it is coloured white which makes it not visible, bar when you hover, this link is an element that should have been styled black, but it will be updated in the future, this was left unfinished due to gitpod workspace issue.
+
 ### **Functional testing** 
 
 **This test goes through every functional aspect of the project through GUI based manual tesing**
