@@ -252,6 +252,17 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 **Note:** At 1280px to 1200px the images for the motorcycles within the cart start to overflow over the cards, this issue was worse but breakpoints were added to amend this issue, however this small range of screen width was left unamended due to time contraints.
 
+#### Profile Page
+
+| Element Tested | Expected outcome | Outcome |
+| --- | --- | --- |
+| Desktop(s) | White background for checkout takes up 100% width, the welcome box takes up 50% width, the orders section takes up to 1140px width due to the container its in and the text is centered and hr's are seperating each order | as expected |
+| Laptop(s) | The same as desktop | as expected |
+| Tablet(s) | The same as desktop, bar the container is now at a max width of 720% | as expected |
+| Mobile(s) | The profile container now has only 25px padding left to right and there is no max width set, so the content fills about 95% of the width | as expected |
+
+**Note:** The styling for this section is quite basic and could definatly do with more styling to make it consistantly professional, but due to time constraints this profile section will need to be updated at a later date but for now it serves its purpose quite well.
+
 ### **Functional testing** 
 
 **This test goes through every functional aspect of the project through GUI based manual tesing**
