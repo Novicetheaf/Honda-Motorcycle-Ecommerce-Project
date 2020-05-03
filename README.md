@@ -216,19 +216,21 @@ With regards to the above mentioned user stories & the usability of the web app,
 | --- | --- | --- |
 | Desktop(s) | On Desktop screens the jumbotron stretches out 75% of the screen, the background image is centered | as expected |
 | Laptop(s) | On laptop devices it remains the same bar the footer which you now need to scroll down to access | as expected |
-| Tablet(s) | On tablet devices the background image is still centered, but the ends of the motorcycle are cut from view and you need to scoll down to view the footer in landscape view | as expected |
-| Mobile(s) | On mobile the jumbotron takes up 75% of the width, and the background image is positioned to the center right of the screen, you can't see the footer until you scroll down | as expected |
+| Tablet(s) | On tablet devices it remains the same bar the footer which you now need to scroll down to access| as expected |
+| Mobile(s) | On mobiles and small tablets the jumbotron takes up 100% of the width and you can't see the footer until you scroll down | as expected |
 
-#### Critics Page
+#### Motorcycles/Products Page
 
 | Element Tested | Expected outcome | Outcome |
 | --- | --- | --- |
-| Desktop(s) | The cards for each review are in rows of 3 | as expected |
+| Desktop(s) | The cards for each motorcycle are in rows of 3 | as expected |
 | Laptop(s) | The same as desktop | as expected |
-| Tablet(s) | The cards for each review are in rows of 2 | as expected |
-| Mobile(s) | The cards for each review are in rows of 1 | as expected |
+| Tablet(s) | The cards for each motorcycle are in rows of 2 | as expected |
+| Mobile(s) | The cards for each motorcycle are in rows of 1 | as expected |
 
-**Note:** For user reviews the page behaves the same bar when in mobile view, where there is a small margin around the cards, which is as expected.
+**Note:** The images on the cards are reduced along with the card size between 600px and 999px, as expected.
+
+
 
 #### See more critic review Page
 
