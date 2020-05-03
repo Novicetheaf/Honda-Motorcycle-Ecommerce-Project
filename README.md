@@ -289,41 +289,76 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 **Note:** When testing the navigation bar all links bring you to the intended locations. This is as expected.
 
-#### **Critic reviews actions** 
+#### **Home page actions**
+- The home page renders a signin option if the user is not signed in, or a view products button if they are signed in, these links bring you to the intended pages.
+
+#### **Sign in Register and Forgot Password**
+- The sign in page has two required fields username/email and password, once both are correct and match what you enterd originally when you registered it will bring you back to the home page and notify you that you signed in. 
+
+- The register page has four fields username, email, password, and confirm password, all bar the email are client side required, so you can create an account without an email, this just mean that you wont have an email to use forgot password for and you wont have email details to populate the profile field that showcases you email.
+
+- Forgot password option was unfortunaly not working on my gmail account, it comes up with an smtp error in debug mode and a 500 server error in production, this issue was unfortunaly not fixed in time, and it will be updated in the near future. 
+
+#### **Motorcycles/products actions** 
 
 | Element Tested | Action | Expected outcome | Outcome |
 | --- | --- | --- | --- |
-| See more button | Click on element | Brings you to specific review  | as expected |
-| Back to critic reviews button | Click on element | Brings you back to critic reviews  | as expected |
+| Add button | Click on element | Adds one of the items you clicked | as expected |
+| Quantity input | type the qty or use the arrows to adjust qty | By doing this it will change how much of the same item you want to add to your cart, you can see the cart icon's qty icon goes up when you do this | as expected |
 
+- This was as expected.
 
-#### **User reviews actions** 
+**Note:** Whatever qty of a certain item you add to the cart cannot be canged unless you go into the cart and choose amend, so this means you can reduce or increase the qty, you can add whatever qty at first from the products/motorcycles page, but after that you need to go to cart to amend the qty or remove. 
 
-| Element Tested | Action | Expected outcome | Outcome |
-| --- | --- | --- | --- |
-| Edit button | Click on element | Brings you to the edit page  | as expected |
-| Delete button | Click on element | deletes the review | as expected |
-
-
-#### **Add review actions** 
+#### **Shopping cart actions** 
 
 | Element Tested | Action | Expected outcome | Outcome |
 | --- | --- | --- | --- |
-| Add review link in navbar | Click on element | Brings up the add review modal  | as expected |
-| models dropdown | Click on element and choose a model | no warning messages appear | as expected |
-| overall rating dropdown | Click on element and choose a rating | no warning messages appear | as expected |
-| name input field | type in a name | no warning messages appear | as expected |
-| ride quality and brakes dropdown | Click on element and choose a rating | no warning messages appear | as expected |
-| engine dropdown | Click on element and choose a rating | no warning messages appear | as expected |
-| build quality and reliability dropdown | Click on element and choose a rating | no warning messages appear | as expected |
-| running costs and value dropdown | Click on element and choose a rating | no warning messages appear | as expected |
-| review summary input field | type in a summary between 25 chars and 100 | no warning messages appear | as expected |
-| Add review button | Click on element | closes the modal and adds the review in user reviews | as expected |
+| Amend button | Click on element | Amends the qty of the item you clicked | as expected |
+| Quantity input | type the qty or use the arrows to adjust qty | By doing this it will change how much of the same item you want to add to your cart, you can see the cart icon's qty icon goes up when you do this and this is also reflected within the checkout page | as expected |
+| Checkout button | Click on element | brings you to the payment details as long as you are signed in, otherwise redirects you to login page | as expected |
 
+- This was as expected.
 
-**Note:** for the input fields for summary and name, they re both required fields. Name field has no min value, but has a max of 25 characters. you will not be allowed to enter any more, this is the same for summary just that the minimum is 25 characters and the max is 100 characters. You won't be allowed to submit if they are blank, or is the summary is less then 25, and you simply won't be allowed to type anymore the the required amount(s).
+#### **Checkout actions** 
 
-**Note:** for the edit review section the fields are the same, bar the edit button which simply updates the review that is currently open. The data from the particular review that is being edited is populated within each specific field, so there is no room for leaving a blank entry for dropdown, but they can be changed. You can however leave the input fields blank, and this will again bring up a warning saying they are required. The edit review section is not a modal so there is no close button, in order to go back to user reviews you need to use the navigation bar, other then this there is no difference found for the testing results.
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Submit button | Click on element | Attempts to make a payment and save order details in your profile, this results in payment successful or if the card details are not correct it will be payment declined etc, there will be a client side confirmation tabjust under the navbar with a response | as expected |
+
+- This was as expected.
+
+**Note:** All input fields for payment details form are required via client side validation, bar card number, cvv, month and year of card, these options will be validated by stripe api and will return a message under the navigation bar regarding its result. 
+
+#### **Profile page**
+No functional elements to be tested here, the profile button brings you to the page and it renders your user name, and email, and all orders from first to last. 
+
+- This was as expected.
+
+#### **Shop reviews actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Go to review | Click on element | filters the reviews and renders only the review you clicked on within the user review page | as expected |
+
+**Note:** Within the user review page, you can click the edit button and this will bring you to the form to update teh details of the review, now there was an issue where the details of the review didn't fill the form fields, this is a feature that will be added at a later date.
+
+- This was as expected.
+
+#### **Add or edit review actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Save button | Click on element | Saves the new review or updates an existing review | as expected |
+| Input Fields | Type in your details | These details are required via client side validation, you will need to filll all fields | as expected |
+
+- This was as expected.
+
+#### **Search Input Field**
+- For this option you can search letters of words, and if the item in motorcycles contains that charector or combination it will appear in the main content, other you will receive a message notifying you that no motorcycles matched your search.
+
+#### **404 page not found**
+- This was tested by turning off debug mode and entering an extension to the web address that was not related to the site, this brings back a 404 not found message and asks the user to have a look at the products available.
 
 #### **Footer Secttion expected actions** 
 
