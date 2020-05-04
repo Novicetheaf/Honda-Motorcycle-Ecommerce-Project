@@ -380,14 +380,14 @@ No functional elements to be tested here, the profile button brings you to the p
 | input email address | leave blank or input a invalid email format | please fill this field at least 10 characters & must included @ and .com | as expected |
 | input message area | leave blank | please fill this field | as expected |
 
-### **CRUD database testing** 
+### **database testing motorcycles/products admin access only** 
 
 | Element Tested | Action | Expected outcome | Outcome |
 | --- | --- | --- | --- |
-| Create option | use the add review form and submit to the database | the database receives the object and the site updates the content accordingly | as expected |
-| Read option | Click critic reviews, click user reviews | the site updates the content accordingly from the database and the cluster matches what is on the page | as expected |
-| Update option | use the edit review form and submit to the database | the database receives the object and the site updates the content accordingly | as expected |
-| Delete option | in user reviews click the delete option | the database receives the request to delete the entry and the site updates the content accordingly | as expected |
+| Add motorcycle | use the site base address with '/admin/' extension which brings you to admin panel sign in, then go to motorcycles model, click add, enter the appropriate data into the fields and hit save | the database receives the object and the site updates the content accordingly | as expected |
+| Read option | Click products/motorcycles, profile, shop reviews, shop review, search option | the site updates the content accordingly from the database and the data on the admin panel matches the data on the client side of the site | as expected |
+| Update option | use the edit shop review form, admin edit products, admin edit order, admin edit users and submit to the database | the database receives the object and the site updates the content or access accordingly | as expected |
+| Delete option | only administration users have the rights to delete an entry, they can delete a user, order, reviews, motorcycles and save | the database receives the request to delete the entry and the site updates the content accordingly | as expected |
 
 **Note:** when testing the database the results on the site and on the database were cross referenced, all data matches as expected.
 
