@@ -389,7 +389,7 @@ No functional elements to be tested here, the profile button brings you to the p
 | Update option | use the edit shop review form, admin edit products, admin edit order, admin edit users and submit to the database | the database receives the object and the site updates the content or access accordingly | as expected |
 | Delete option | only administration users have the rights to delete an entry, they can delete a user, order, reviews, motorcycles and save | the database receives the request to delete the entry and the site updates the content accordingly | as expected |
 
-**Note:** when testing the database the results on the site and on the database were cross referenced, all data matches as expected.
+**Note:** when testing the database the results on the site and on the database were cross referenced, all data matches as expected. I used Datazenit's heroku data explorer to allow me to view my Heroku Postgresql database [Datazenit's tool can be found here.](https://datazenit.com/heroku-data-explorer.html)
 
 ## Deployment
 
