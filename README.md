@@ -183,8 +183,11 @@ Edmund O Callaghan
 [Cart HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/cart-validation.PNG)
 
 [Checkout Page HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/checkout-validation.PNG)
+
+
 **Note:**checkout page had two errors, and a few minor warnings, these could not be fixed due to access to workspace, however I knew how to fix them, within the project there are some minor validation issues, but due to my workspace corruption I was unable to access the workspace to do any further editing to the code itself.
 Please see this link for details on the workspace issue: [gitpod issue ticket was created](https://github.com/gitpod-io/gitpod/issues/551)
+
 
 [Profile Page HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/profile-validation.PNG)
 
@@ -209,11 +212,9 @@ Please see this link for details on the workspace issue: [gitpod issue ticket wa
 [Shop Reviews CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/shop-reviews-css-validation.PNG)
 
 <hr>
+
 **Note:** All custom python code has been attached here for the custom apps, the code had some very minor spacing standards that needed to be fixed, I fixed these issues through the validator, I was not able to access my workspace so the code within the project will have minor spacing issues and the odd long line of code.
 
-[Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
-
-[Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
 
 [Motorcycle models Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/motorcycle-models-validation.PNG)
 
