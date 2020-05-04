@@ -176,25 +176,60 @@ Edmund O Callaghan
 
 ### Code validation Testing:
 
-- Validation code testing not complete, due to gitpod workspace corruption.
+[Index HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/index-validation.PNG)
 
-[Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
+[Motorcycles HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/motorcycle-validation.PNG)
 
-[Critics Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/critics-page-validation.PNG)
+[Cart HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/cart-validation.PNG)
 
-[Edit User HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/edit-user-page-validation.PNG)
+[Checkout Page HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/checkout-validation.PNG)
+**Note:**checkout page had two errors, and a few minor warnings, these could not be fixed due to access to workspace, however I knew how to fix them, within the project there are some minor validation issues, but due to my workspace corruption I was unable to access the workspace to do any further editing to the code itself.
+Please see this link for details on the workspace issue: [gitpod issue ticket was created](https://github.com/gitpod-io/gitpod/issues/551)
 
-[User Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/user-page-validation.PNG)
+[Profile Page HTML Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/profile-validation.PNG)
 
-[Single Critic Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/single-critic-page-validation.PNG)
+[Shop Review Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/shop-review-validation.PNG)
 
-[Global JavaScript Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/general-js-validation.PNG)
+[Shop Reviews Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/shop-reviews-validation.PNG)
+
+<hr>
 
 [Send Mail JavaScript Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/send-mail-code-validation.PNG)
 
+<hr>
+
+[Cart CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/cart-css-validation.PNG)
+
+[Checkout CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/checkout-css-validation.PNG)
+
+[Login Register or Forgot Password CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/login-register-or-forgot%20password-css-validation.PNG)
+
+[Style CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/style-css-validation.PNG)
+
+[Shop Reviews CSS Validation](https://raw.githubusercontent.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/master/code-validation/shop-reviews-css-validation.PNG)
+
+<hr>
+**Note:** All custom python code has been attached here for the custom apps, the code had some very minor spacing standards that needed to be fixed, I fixed these issues through the validator, I was not able to access my workspace so the code within the project will have minor spacing issues and the odd long line of code.
+
 [Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
 
-[CSS Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/css-validation.PNG)
+[Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
+
+[Motorcycle models Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/motorcycle-models-validation.PNG)
+
+[Motorcycle urls Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/motorcycle-urls-validation.PNG)
+
+[Motorcycle views Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/motorcycle-views-validation.PNG)
+
+[Shop Reviews forms Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/shop-reviews-python-validation-forms.PNG)
+
+[Shop Reviews models Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/shop-reviews-python-validation-models.PNG)
+
+[Shop Reviews urls Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/shop-reviews-python-validation-urls.PNG)
+
+[Shop Reviews views Python Validation](https://github.com/Novicetheaf/Honda-Motorcycle-Ecommerce-Project/blob/master/code-validation/shop-reviews-validation-views.PNG)
+
+<hr>
 
 ### User stories
 For my user stories testing, I had to put myself in the shoes of the user, anyone looking to purchase honda motorcycles. They would want to be given an array of different types of bikes available. They would also be looking to find out what customers thought of the shopping expierence at the Honda motorcycles shop. They would want to be able to make payments for the motorcycle(s) that peaks their interest. They would need a way to view their orders to make sure that the address entered was correct. They would need to be able to create an account in order to store what is in their cart and orders.
