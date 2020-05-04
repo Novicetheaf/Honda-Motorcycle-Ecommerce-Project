@@ -427,9 +427,11 @@ No functional elements to be tested here, the profile button brings you to the p
 
 **Note:** when testing the database the results on the site and on the database were cross referenced, all data matches as expected. I used Datazenit's heroku data explorer to allow me to view my Heroku Postgresql database [Datazenit's tool can be found here.](https://datazenit.com/heroku-data-explorer.html)
 
+## Automated testing & Integration testing
+
+I setup Travis to run continuous integration testing for each deployment, as for unit testing I tried to write up python unit tests, but I was receiving an error and I didn't know how to approach that issue within the limited time frame that was left, so I took that aspect out of the project. The manual testing more then covers what is needed along with Travis in a project of this scale, however if I could have gotten the unit tests working I would have written code to check that the views rendered with the correct http response.
+
 ## Deployment
-
-
 
 The project is hosted using heroku as github pages doesn't support a postgresql database, It also uses AWS for my static folder, which containes all javascript, css and images.
 
