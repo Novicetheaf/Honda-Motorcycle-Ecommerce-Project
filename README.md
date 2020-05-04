@@ -384,7 +384,7 @@ No functional elements to be tested here, the profile button brings you to the p
 
 | Element Tested | Action | Expected outcome | Outcome |
 | --- | --- | --- | --- |
-| Add option | use the site base address with '/admin/' extension which brings you to admin panel sign in, then go to motorcycles model, click add, enter the appropriate data into the fields and hit save | the database receives the object and the site updates the content accordingly | as expected |
+| Add option | use the site base address with '/admin/' extension which brings you to admin panel sign in, then go to motorcycles model, click add, enter the appropriate data into the fields and hit save, for adding user reviews go to add review from the navbar client side and enter details and click save, add an order go to bikes add items, cart and checkout, then add payment and address details correctly using stripes testing cards as above then submit | the database receives the object and the site updates the content accordingly | as expected |
 | Read option | Click products/motorcycles, profile, shop reviews, shop review, search option | the site updates the content accordingly from the database and the data on the admin panel matches the data on the client side of the site | as expected |
 | Update option | use the edit shop review form, admin edit products, admin edit order, admin edit users and submit to the database | the database receives the object and the site updates the content or access accordingly | as expected |
 | Delete option | only administration users have the rights to delete an entry, they can delete a user, order, reviews, motorcycles and save | the database receives the request to delete the entry and the site updates the content accordingly | as expected |
